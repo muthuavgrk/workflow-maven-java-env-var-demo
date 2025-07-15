@@ -29,4 +29,7 @@ jobs:
       - name: Run maven command
         run: $LAST_MAVEN_COMMAND
 
+      - name: github env var test
+        run: $testMavenCMD
+
 
