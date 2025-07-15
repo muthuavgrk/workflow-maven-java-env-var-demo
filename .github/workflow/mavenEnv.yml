@@ -1,0 +1,21 @@
+name: Example Workflow
+
+on: [push]
+
+env:
+  LAST_MAVEN_COMMAND: mvn clean install
+
+jobs:
+  example_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Print the global variable
+        run: echo "Workflow-level variable $LAST_MAVEN_COMMAND"
+
+      - name: Run maven command
+        run: $LAST_MAVEN_COMMAND
+
+
