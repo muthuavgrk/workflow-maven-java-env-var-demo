@@ -30,6 +30,6 @@ jobs:
         run: $LAST_MAVEN_COMMAND
 
       - name: github env var test
-        run: echo "and the github env var is $dev.TESTMAVENCMD"
+        run: echo "and the github env var is $vars.TESTMAVENCMD"
 
 
