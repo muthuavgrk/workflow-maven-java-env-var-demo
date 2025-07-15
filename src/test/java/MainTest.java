@@ -7,6 +7,6 @@ public class MainTest {
     public void envVarTest(){
 
         Assert.assertNotNull(System.getenv("LAST_MAVEN_COMMAND"));
-        System.out.println(System.getenv("LAST_MAVEN_COMMAND"));
+        System.out.println("***********"+System.getenv("LAST_MAVEN_COMMAND"));
     }
 }
